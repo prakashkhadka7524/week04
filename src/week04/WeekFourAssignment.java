@@ -45,15 +45,15 @@ public class WeekFourAssignment {
 		System.out.println();
 		
 			}
-       System.out.println("-----------------------------");
-       Scanner scanner= new Scanner(System.in);
-       String word= scanner.next();
-       int n=scanner.nextInt();
-       concat( word,  n);	
+       System.out.println("-----------------------------"); // Question 7
+       Scanner scanner= new Scanner(System.in); // user input by scanner method
+       String word= scanner.next(); // String input
+       int n=scanner.nextInt(); // int input
+       concat( word,  n);	// calling method
 		
 	}
-	 static void concat(String word, int n){
-	        for (int i=0; i<n; i++){
+	 static void concat(String word, int n){ // method
+	        for (int i=0; i<n; i++){ // looping
 	            System.out.print(word);
 	        }
 	  }
