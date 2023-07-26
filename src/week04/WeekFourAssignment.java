@@ -1,6 +1,7 @@
 package week04;
 
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class WeekFourAssignment {
 
@@ -41,10 +42,21 @@ public class WeekFourAssignment {
 		int nameLength= names[j].length();
 		System.out.print(nameLength+" "); // printing the lengths of names
 		
-		System.out.println("-----------------------------");
+		System.out.println();
 		
+			}
+       System.out.println("-----------------------------");
+       Scanner scanner= new Scanner(System.in);
+       String word= scanner.next();
+       int n=scanner.nextInt();
+       concat( word,  n);	
 		
 	}
-	}
-
+	 static void concat(String word, int n){
+	        for (int i=0; i<n; i++){
+	            System.out.print(word);
+	        }
+	  }
 }
+
+
