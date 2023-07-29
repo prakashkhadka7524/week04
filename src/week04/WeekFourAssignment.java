@@ -8,14 +8,28 @@ public class WeekFourAssignment {
 	public static void main(String[] args) {
 		
 		System.out.println("-------------------------------");
+		/*Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
+		a. Programmatically subtract the value of the first element in the array from the value in the last 
+		element of the array (i.e. do not use ages[7] in your code). Print the result to the console.  
+		b. Create a new array with 9 elements (one more than the ages array)  Repeat the step above to ensure
+		 it is dynamic (works for arrays of different lengths).
+
+		c. Use a loop to iterate through the array and calculate the average age. Print the result to the console.*/
 		// Step 1 main
 		int [] ages= {3,9,23,64,2,8,28,93}; // array with 8 elements
 		int result = 0; // initialize the result variable
 		for(int i=0; i<ages.length; i++) { // using for loop to check 
-			 result= ages[ages.length-1]-ages[0];// writing the logic
+			 result= ages[ages.length-1]-ages[0];// writing the logic last element - first element
 		}
 		System.out.println(result); // print the result
-		int [] newAges= new int [ages.length+1];
+		// we cannot change the size of the array
+		int sumOfAges=0;
+		for(int i=0; i<ages.length; i++) {
+			sumOfAges=sumOfAges+ages[i];
+		}
+		System.out.println(sumOfAges);
+		System.out.println("Average age is :"+sumOfAges/ages.length);
+		
 		System.out.println("-------------------------");
 		// Step 2
 		String names[] = {"Sam", "Tommy", "Tim", "Sally", "Buck", "Bob" };
@@ -65,7 +79,7 @@ public class WeekFourAssignment {
        String firstName=scanner.next();
        System.out.println("Enter last Name");
 		String lastName=scanner.next();
-		fullName(firstName, lastName);
+		fullName(firstName, lastName); // method called
 		System.out.println("-----------------------");
 		
 		// Step 9 main
